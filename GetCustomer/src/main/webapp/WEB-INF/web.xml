@@ -1,0 +1,40 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>CustomerLogout</servlet-name>
+  	<display-name>CustomerLogout</display-name>
+  	<description></description>
+  	<servlet-class>com.customer.web.logout.CustomerLogout</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>CustomerLogout</servlet-name>
+  	<url-pattern>/CustomerLogout</url-pattern>
+  </servlet-mapping>
+  <!-- <servlet>
+  	<servlet-name>CustomerLogin</servlet-name>
+  	<display-name>CustomerLogin</display-name>
+  	<description></description>
+  	<servlet-class>com.customer.web.login.CustomerLogin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>CustomerLogin</servlet-name>
+  	<url-pattern>/CustomerLogin</url-pattern>
+  </servlet-mapping> -->
+  <welcome-file-list>
+	<welcome-file>Login.jsp</welcome-file>
+</welcome-file-list>
+  <!-- <servlet>
+  	<servlet-name>GetCustomerController</servlet-name>
+  	<display-name>GetCustomerController</display-name>
+  	<description></description>
+  	<servlet-class>com.customer.web.GetCustomerController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>GetCustomerController</servlet-name>
+  	<url-pattern>/getCustomer</url-pattern>
+  </servlet-mapping> -->
+</web-app>
