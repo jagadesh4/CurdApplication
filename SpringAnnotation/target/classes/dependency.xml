@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:context="http://www.springframework.org/schema/context"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+  http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+  http://www.springframework.org/schema/context
+  http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+<!-- <bean id="Vehicle" class="com.nucleus.SpringAnnotation.Bike"></bean> -->
+<context:component-scan base-package="com.nucleus.SpringAnnotation"></context:component-scan>
+
+<!-- <property name="brand" value="MRF"></property> -->
+<bean id="bike" class="com.nucleus.SpringAnnotation.Bike">
+<constructor-arg name="tr">
+<bean id="tyre" class="com.nucleus.SpringAnnotation.Tyre"></bean>
+</constructor-arg>
+</bean>
+<bean id="car" class="com.nucleus.SpringAnnotation.Car">
+<constructor-arg name="tr">
+<bean id="tyre" class="com.nucleus.SpringAnnotation.Tyre"></bean>
+</constructor-arg>
+</bean>
+</beans>
